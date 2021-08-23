@@ -8,8 +8,22 @@
 
 Realizada em aula (Grupo)`
 
-const retorna_soma = (nota1, nota2) => {
-    let soma = (nota1 + nota2);
+const receberDadosTeclado = require('prompt-sync')({sigint: true});
+
+let nota1 = +receberDadosTeclado('Digite uma nota: ')
+let nota2 = +receberDadosTeclado('Digite uma nota: ')
+
+const retorna_soma = (param1, param2) => {
+    let soma = (param1 + param2);
     return soma;
 }
+
+resultado = retorna_soma(nota1,nota2)
+
+if (resultado == resultado){
+  console.log(`${nota1} + ${nota2} = ${resultado} = Matemática correta`)
+}
+else
+    console.log(`Soma errada`)
+
 module.exports = retorna_soma;
