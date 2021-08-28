@@ -3,6 +3,7 @@
     "jest": "^27.0.6"
   },
   "scripts": {
+    "start": "node main.js",
     "test": "jest"
   },
   "dependencies": {

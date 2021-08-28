@@ -8,9 +8,10 @@
 
 Realizada em aula (Grupo)`
 
-const retorna_soma = (param1, param2) => {
-    let soma = (param1 + param2);
-    return soma;
+class Somador {
+    soma(x,y){
+        return x+y;
+    }
 }
 
-module.exports = retorna_soma;
+module.exports = Somador;
